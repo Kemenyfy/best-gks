@@ -4,6 +4,12 @@ html {
   height: 100%;
 }
 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin-left: 1cm;
   margin-right: 1cm;
@@ -40,14 +46,23 @@ body {
   width: 80%;
 }
 
+/* Style footers all over the website */
 footer {
   text-align: center;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 10px;
+
 }
 
+/* Style Home page image */
 img {
+  display: flex;
   width: 80%;
+  margin-top: 2em;
 }
 
+/* Style pictures in top Gks */
 .bestgk {
   position: relative;
   width: 25%;
@@ -58,9 +73,47 @@ img {
   margin-bottom: 8px;
   margin-top: 8px;
 }
-  
 
 
+/* Add a border around the table */ 
+.tables {
+  border:8px solid green;
+}
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(230, 174, 52);
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(236, 14, 14);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
 }
